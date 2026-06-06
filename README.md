@@ -7,7 +7,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Satire](https://img.shields.io/badge/contains-100%25_satire-red.svg)](https://en.wikipedia.org/wiki/Satire)
 
-> ⚠️ **DISCLAIMER**: This package is **SATIRE**. It contains absolutely NO real hacking functionality. It cannot hack EVMs, elections, toasters, or anything else. If you believe this package can actually hack an EVM, please seek immediate assistance from a qualified electrician or reality checker.
 
 ---
 
@@ -81,3 +80,4 @@ pip uninstall hack-evm
 **now, your computer becomes less humorous.**
 
 
+> ⚠️ **DISCLAIMER**: This package is **SATIRE**. It contains absolutely NO real hacking functionality. It cannot hack EVMs, elections, toasters, or anything else. If you believe this package can actually hack an EVM, please seek immediate assistance from a qualified electrician or reality checker.
