@@ -3,6 +3,7 @@
 ### *The World's Most Advanced EVM Hacking Toolkit™*
 
 [![PyPI version](https://badge.fury.io/py/hack-evm.svg)](https://pypi.org/project/hack-evm/)
+[![Star the repo](https://img.shields.io/badge/contains-github.svg)(https://github.com/predictivemanish)]
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Satire](https://img.shields.io/badge/contains-100%25_satire-red.svg)](https://en.wikipedia.org/wiki/Satire)
