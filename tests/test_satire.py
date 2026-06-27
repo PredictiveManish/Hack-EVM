@@ -93,9 +93,9 @@ class TestNoRealHacking:
         ]
         for func in public_functions:
             annotations = func.__annotations__
-            assert "return" in annotations, (
-                f"Function {func.__name__} missing return type annotation"
-            )
+            assert (
+                "return" in annotations
+            ), f"Function {func.__name__} missing return type annotation"
 
     def test_no_network_calls_possible(self) -> None:
         """Verify the package cannot make network calls."""

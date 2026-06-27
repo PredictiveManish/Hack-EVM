@@ -5,6 +5,8 @@ Provides various commands for attempting to hack EVMs
 through the terminal. All commands fail hilariously.
 """
 
+from typing import Literal
+
 import click
 
 from hack_evm.core import (
@@ -49,7 +51,7 @@ def main() -> None:
     default="basic",
     help="Hacking sophistication level",
 )
-def hack_command(level: str) -> None:
+def hack_command(level: Literal["basic", "advanced", "expert", "god_mode"]) -> None:
     """
     Attempt to hack an EVM.
 

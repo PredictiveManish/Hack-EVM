@@ -23,7 +23,7 @@ class TestCLIBasicCommands:
     def test_main_no_args(self, runner: CliRunner) -> None:
         """Test that main with no args shows help."""
         result = runner.invoke(main)
-        assert result.exit_code == [0, 2]
+        assert result.exit_code in (0, 2)
         assert "hack-evm" in result.output
         assert "SATIRE" in result.output.upper()
 

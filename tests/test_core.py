@@ -15,12 +15,17 @@ from hack_evm.core import (
     explain,
     hack,
     quantum_mode,
+    set_fast_mode,
     time_machine,
 )
 
 
 class TestHack:
     """Test the main hack function."""
+
+    def setup_method(self) -> None:
+        """Enable fast mode before each test."""
+        set_fast_mode(True)
 
     def test_hack_basic(self) -> None:
         """Test basic hack level returns expected structure."""

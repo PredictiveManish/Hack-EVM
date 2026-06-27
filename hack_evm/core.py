@@ -16,6 +16,16 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 # Initialize rich console for beautiful terminal output
 console = Console()
 
+# Global flag to skip delays (used by tests)
+_fast_mode: bool = False
+
+
+def set_fast_mode(enabled: bool = True) -> None:
+    """Enable or disable fast mode for testing."""
+    global _fast_mode
+    _fast_mode = enabled
+
+
 # Collection of sophisticated hacking steps that definitely work (not)
 SOPHISTICATED_STEPS: list[str] = [
     "Initializing quantum entanglement with EVM...",
@@ -115,6 +125,7 @@ def _animate_steps(steps: list[str], delay: float = 0.5) -> None:
         steps: List of step messages to display
         delay: Delay between steps in seconds
     """
+    effective_delay = 0 if _fast_mode else delay
     with Progress(
         SpinnerColumn(),
         TextColumn("[progress.description]{task.description}"),
@@ -122,7 +133,7 @@ def _animate_steps(steps: list[str], delay: float = 0.5) -> None:
     ) as progress:
         task = progress.add_task("[cyan]Preparing hack...", total=len(steps))
         for step in steps:
-            time.sleep(delay)
+            time.sleep(effective_delay)
             progress.update(task, description=f"[yellow][*] {step}")
             progress.advance(task)
 
